@@ -80,7 +80,7 @@ if uploaded_file:
     target = st.number_input("Enter your lumpsum investment amount", value=50000)
 
     # Optimize weights
-    df_value_momentum["qty"] = find_weights(df_value_momentum["Close Price"], target=target)
+    df_value_momentum["Qty"] = find_weights(df_value_momentum["Close Price"], target=target)
 
     # Add "Allocated Amount" column based on qty * Close Price
     df_value_momentum["Allocated Amount"] = df_value_momentum["qty"] * df_value_momentum["Close Price"]
