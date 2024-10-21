@@ -83,7 +83,7 @@ if uploaded_file:
     df_value_momentum["Qty"] = find_weights(df_value_momentum["Close Price"], target=target)
 
     # Add "Allocated Amount" column based on qty * Close Price
-    df_value_momentum["Allocated Amount"] = df_value_momentum["qty"] * df_value_momentum["Close Price"]
+    df_value_momentum["Allocated Amount"] = df_value_momentum["Qty"] * df_value_momentum["Close Price"]
 
     # Create AgGrid configuration to freeze the first column
     gb = GridOptionsBuilder.from_dataframe(df_value_momentum)
