@@ -34,7 +34,7 @@ def find_weights(x, target):
     return w_natural
 
 # Streamlit UI
-st.title('Stock Portfolio Optimization')
+st.title('Trending Value Momentum Strategy')
 
 # Upload CSV file
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
